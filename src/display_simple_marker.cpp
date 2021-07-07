@@ -22,7 +22,6 @@ namespace rviz
         pub_ = relative_nh_.advertise<visualization_msgs::Marker>("simple_marker", 1);
 
         // Prepare marker
-        // marker_msg_.points.clear();
         marker_msg_.header.frame_id = frame_id_;
         marker_msg_.ns = "simple_display";
         marker_msg_.id = 0;
