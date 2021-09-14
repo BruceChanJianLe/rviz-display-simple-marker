@@ -19,7 +19,7 @@ namespace rviz
         private_nh_.param<double>("color_a", color_a_, 1.0);
 
         // Define publisher
-        pub_ = relative_nh_.advertise<visualization_msgs::Marker>("simple_marker", 1);
+        pub_ = relative_nh_.advertise<visualization_msgs::Marker>("simple_marker", 1, true);
 
         // Prepare marker
         marker_msg_.header.frame_id = frame_id_;
